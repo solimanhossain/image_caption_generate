@@ -4,7 +4,7 @@
 
 <img src="https://github.com/solimanhossain/image_caption_generate/blob/main/media/initialize.png?raw=true" alt="initialize" width="360" align="left"/>
 
-### Install | Clone | Initialize Environmnet
+### Install Softwares | Clone Repo | Initialize Environmnet
 
 ---
 
@@ -22,8 +22,6 @@ python manage.py runserver
 > Used Neural Pragmatic NLG [Pretrained Model](https://michael-franke.github.io/npNLG/08-grounded-LMs/08c-NIC-pretrained.html).
 
 > These projects are done by [mine](https://github.com/solimanhossain/).
->
-> <br>
 
 ### Sample Output
 
