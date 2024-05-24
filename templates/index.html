@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Caption Generate</title>
+        <style>
+            input[type="text"] {
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="flex flex-col justify-center items-center">
+            <h1 class="mt-6 text-2xl text-blue-500">IMAGE CAPTION GENERATE</h1>
+            <!-- INPUT -->
+            <form
+                method="post"
+                enctype="multipart/form-data"
+                class="flex flex-col justify-center items-center p-4"
+            >
+                {% csrf_token %} {{ form.title}}
+
+                <label
+                    for="id_image"
+                    class="bg-gray-100 border rounded border-gray-400 px-4 py-2 cursor-pointer z-10"
+                >
+                    <p
+                        id="open_tag"
+                        class="flex flex-col justify-center items-center p-2"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="2em"
+                            height="2em"
+                            viewBox="0 0 24 24"
+                        >
+                            <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                            >
+                                <path
+                                    d="M12 20H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1a2 2 0 0 0 2-2a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v3.5M16 19h6m-3-3v6"
+                                />
+                                <path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0-6 0" />
+                            </g>
+                        </svg>
+                    </p>
+                    <div class="hidden">{{ form.image}}</div>
+                </label>
+
+                <!-- SUBMIT -->
+                <button
+                    type="submit"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2"
+                >
+                    Generate
+                </button>
+            </form>
+
+            <!-- OUTPUT -->
+            <div class="border rounded rounded-b">
+                {% if img_obj %}
+                <p class="text-center border bg-gray-300 rounded-t p-2">
+                    {{img_obj.title}}
+                </p>
+                <div class="bg-gray-100 p-4 w-full">
+                    <p class=" bg-yellow-50 border rounded mb-1"><span class="bg-blue-500 rounded-l px-1 text-white">EN</span>
+                        <span class="px-1">{{caption}}</span>
+                    </p>
+                    <p class=" bg-yellow-50 border rounded"><span class="bg-blue-500 rounded-l px-1 text-white">BN</span>
+                        <span class="px-1">{{caption_bn}}</span>
+                    </p>
+                </div>
+                <img
+                    src="{{ img_obj.image.url}}"
+                    class="max-h-96 object-cover w-full"
+                    alt="image"
+                />
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- SCRIPTS -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            let input = document.getElementById("id_image");
+
+            input.addEventListener("change", () => {
+                let inputImage =
+                    document.querySelector("input[type=file]").files[0];
+
+                let open_tag = document.getElementById("open_tag");
+                let title = document.getElementById("id_title");
+
+                open_tag.innerText = inputImage.name;
+                title.value = inputImage.name;
+            });
+        </script>
+    </body>
+</html>
