@@ -4,7 +4,7 @@
 
 <img src="https://github.com/solimanhossain/image_caption_generate/blob/main/media/initialize.png?raw=true" alt="initialize" width="360" align="left"/>
 
-### Install | Clone | Initialize
+### Install | Clone | Initialize Environmnet
 
 ---
 
@@ -15,10 +15,18 @@ pip install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
-
 ```
 
 <br>
+
+> Used Neural Pragmatic NLG [Pretrained Model](https://michael-franke.github.io/npNLG/08-grounded-LMs/08c-NIC-pretrained.html).
+
+> These projects are done by [mine](https://github.com/solimanhossain/).
+>
+> <br>
+
+### Sample Output
+
 <table>
     <tr>
         <td><img src="https://github.com/solimanhossain/image_caption_generate/blob/main/media/previews/output-sample-1.png?raw=true" alt="preview" width="253"/>
@@ -26,12 +34,6 @@ python manage.py runserver
 <img src="https://github.com/solimanhossain/image_caption_generate/blob/main/media/previews/output-sample-3.png?raw=true" alt="preview" width="250"/></td>
     </tr>
 </table>
-
-<br>
-
-> Used Neural Pragmatic NLG [Pretrained Model](https://michael-franke.github.io/npNLG/08-grounded-LMs/08c-NIC-pretrained.html).
-
-> These projects are done by [mine](https://github.com/solimanhossain/).
 
 ---
 
