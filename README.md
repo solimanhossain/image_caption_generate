@@ -4,11 +4,11 @@
 
 <img src="https://github.com/solimanhossain/image_caption_generate/blob/main/media/initialize.png?raw=true" alt="initialize" width="360" align="left"/>
 
-### Install Softwares | Clone Repo | Initialize Environment
+### Install | Clone | Initialize
 
 ---
 
-[Python v3.10.4](https://www.python.org/downloads/release/python-3104/) • [PyCharm Community](https://www.jetbrains.com/pycharm/download/other.html) • [Git](https://git-scm.com/downloads)
+[Python v3.10.4](https://www.python.org/downloads/release/python-3104/) • [Git](https://git-scm.com/downloads) • [PyCharm Community](https://www.jetbrains.com/pycharm/download/other.html)
 
 ```
 pip install -r requirements.txt
@@ -24,9 +24,9 @@ python manage.py runserver
 <br>
 <table>
     <tr>
-        <td><img src="https://github.com/solimanhossain/image_caption_generate/blob/main/media/previews/output-sample-1.png?raw=true" alt="preview" width="305"/>
-<img src="https://github.com/solimanhossain/image_caption_generate/blob/main/media/previews/output-sample-2.png?raw=true" alt="preview" width="300"/>
-<img src="https://github.com/solimanhossain/image_caption_generate/blob/main/media/previews/output-sample-3.png?raw=true" alt="preview" width="300"/></td>
+        <td><img src="https://github.com/solimanhossain/image_caption_generate/blob/main/media/previews/output-sample-1.png?raw=true" alt="preview" width="252"/>
+<img src="https://github.com/solimanhossain/image_caption_generate/blob/main/media/previews/output-sample-2.png?raw=true" alt="preview" width="250"/>
+<img src="https://github.com/solimanhossain/image_caption_generate/blob/main/media/previews/output-sample-3.png?raw=true" alt="preview" width="250"/></td>
     </tr>
 </table>
 
