@@ -12,11 +12,8 @@
 
 ```
 pip install -r requirements.txt
-
 python manage.py makemigrations
-
 python manage.py migrate
-
 python manage.py runserver
 
 ```
@@ -24,7 +21,7 @@ python manage.py runserver
 <br>
 <table>
     <tr>
-        <td><img src="https://github.com/solimanhossain/image_caption_generate/blob/main/media/previews/output-sample-1.png?raw=true" alt="preview" width="252"/>
+        <td><img src="https://github.com/solimanhossain/image_caption_generate/blob/main/media/previews/output-sample-1.png?raw=true" alt="preview" width="253"/>
 <img src="https://github.com/solimanhossain/image_caption_generate/blob/main/media/previews/output-sample-2.png?raw=true" alt="preview" width="250"/>
 <img src="https://github.com/solimanhossain/image_caption_generate/blob/main/media/previews/output-sample-3.png?raw=true" alt="preview" width="250"/></td>
     </tr>
